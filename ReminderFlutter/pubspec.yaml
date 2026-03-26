@@ -1,0 +1,33 @@
+name: reminder_app
+description: 随机锁屏提醒 App - 每隔1~4分钟在锁屏显示三行汉字提醒
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 本地通知（Android + iOS 均支持）
+  flutter_local_notifications: ^17.2.2
+
+  # 后台任务调度
+  workmanager: ^0.5.2
+
+  # 本地数据持久化
+  shared_preferences: ^2.2.3
+
+  # 权限申请
+  permission_handler: ^11.3.1
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
